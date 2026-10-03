@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_green/pages/onborading/onborading_one_page.dart';
+import 'package:go_green/pages/onborading/onborading_two_page.dart';
 import 'package:go_green/pages/onborading/welcome_page.dart';
 import 'package:go_green/pages/splash/splash_page.dart';
 
@@ -22,6 +24,16 @@ class AppRoutes {
         return MaterialPageRoute(
           settings: settings,
           builder: (_) => WelcomPage(),
+        );
+      case OnboradingOnePage.name:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => OnboradingOnePage(),
+        );
+      case OnboradingTwoPage.name:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => OnboradingTwoPage(),
         );
       default:
         return _errorRoute(settings);
