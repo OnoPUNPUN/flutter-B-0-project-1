@@ -13,5 +13,6 @@ class AppColors {
 
   static const textPrimary = botanicalGreen;
   static const textOnPrimary = surface;
+  static const textSecondary = Color(0xFFB7C189);
   static const error = Color.fromARGB(255, 197, 51, 51);
 }

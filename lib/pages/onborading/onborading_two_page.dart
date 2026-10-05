@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_green/pages/auth/login_page.dart';
 import 'package:go_green/widgets/app_button.dart';
 import 'package:go_green/widgets/onborading_page_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -42,7 +43,9 @@ class OnboradingTwoPage extends StatelessWidget {
               const Spacer(),
               AppButton(
                 title: "Create Account",
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, LoginPage.name);
+                },
                 rightPadding: 0,
               ),
               const SizedBox(height: 16),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_green/pages/auth/login_page.dart';
+import 'package:go_green/pages/auth/registration_page.dart';
 import 'package:go_green/pages/onborading/onborading_one_page.dart';
 import 'package:go_green/pages/onborading/onborading_two_page.dart';
 import 'package:go_green/pages/onborading/welcome_page.dart';
@@ -34,6 +36,16 @@ class AppRoutes {
         return MaterialPageRoute(
           settings: settings,
           builder: (_) => OnboradingTwoPage(),
+        );
+      case LoginPage.name:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => LoginPage(),
+        );
+      case RegistrationPage.name:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => RegistrationPage(),
         );
       default:
         return _errorRoute(settings);

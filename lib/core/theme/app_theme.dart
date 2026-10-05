@@ -52,6 +52,11 @@ class AppTheme {
           fontSize: 24,
           fontWeight: FontWeight.w600,
         ),
+        bodyMedium: const TextStyle(
+          fontSize: 16,
+          color: AppColors.textSecondary,
+          height: 1.4,
+        ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -63,6 +68,30 @@ class AppTheme {
           ),
           textStyle: const TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
           elevation: 0,
+        ),
+      ),
+
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: AppColors.surface,
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: 16,
+        ),
+        hintStyle: const TextStyle(
+          color: AppColors.textSecondary,
+          fontSize: 14,
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.splashBackground),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(
+            color: AppColors.botanicalGreen,
+            width: 2,
+          ),
         ),
       ),
     );
